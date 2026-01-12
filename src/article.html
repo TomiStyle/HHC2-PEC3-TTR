@@ -4,8 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jornadas de Cocina Tradicional · Artículo</title>
-  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" /><!-- do not remove this line! -->
 </head>
 
 <body class="font-sans bg-white">
@@ -45,11 +44,8 @@
           cuchara, las conservas caseras y las recetas de temporada.
         </p>
 
-        <blockquote class="bg-gray-50 border-l-4 border-uoc-corporate p-8 italic text-lg text-gray-700 rounded-md my-8">
-          «Cocinar como lo hacían nuestras abuelas no es nostalgia, es
-          sostenibilidad. Es entender el ciclo de los alimentos y respetar el
-          tiempo que necesitan.»
-        </blockquote>
+        <!-- Incluimos el componente blockquote con posthtml-include -->
+        <include src="./components/article-quote.html"></include>
 
         <p>
           Este movimiento no se limita a la alta gastronomía. En pueblos y
@@ -110,5 +106,6 @@
   </main>
 
   <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
 </body>
 </html>

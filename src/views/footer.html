@@ -9,15 +9,22 @@
 
     <div class="flex justify-center gap-4 mb-6">
       <!-- Enlaces a redes sociales (sin iconos de Bootstrap) -->
-      <a href="#" class="text-2xl hover:text-uoc-masterbrand">
-        <i class="fab fa-facebook"></i>
-      </a>
-      <a href="#" class="text-2xl hover:text-uoc-masterbrand">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="#" class="text-2xl hover:text-uoc-masterbrand">
-        <i class="fab fa-x-twitter"></i>
-      </a>
+      <!-- Incluimos los enlaces a redes sociales con posthtml-include,
+      además utilizamos variables para poder pasar un valor u otro dependiendo de la red social -->
+      <include
+        src="./components/social-link.html"
+        locals='{"href":"https://www.facebook.com","label":"Facebook","iconClass":"fab fa-facebook"}'
+      ></include>
+
+      <include
+        src="./components/social-link.html"
+        locals='{"href":"https://www.instagram.com","label":"Instagram","iconClass":"fab fa-instagram"}'
+      ></include>
+
+      <include
+        src="./components/social-link.html"
+        locals='{"href":"https://twitter.com","label":"X (antes Twitter)","iconClass":"fab fa-x-twitter"}'
+      ></include>
     </div>
 
     <p class="text-xs opacity-60">

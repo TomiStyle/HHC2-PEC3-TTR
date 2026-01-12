@@ -4,8 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jornadas de Cocina Tradicional · Portada</title>
-  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" /><!-- do not remove this line! -->
 </head>
 <body class="bg-[#fefcf8] font-sans">
   <include src="./views/header.html"></include>
@@ -31,18 +30,12 @@
         </div>
       </div>
 
-      <!-- Info Aside -->
-      <aside class="bg-gray-900 text-white p-6 rounded-2xl">
-        <h2 class="text-sm uppercase tracking-widest mb-4 opacity-80">Incluye</h2>
-        <ul class="space-y-3 text-sm">
-          <li class="flex items-center gap-2"><span>•</span> +10 ponentes especialistas</li>
-          <li class="flex items-center gap-2"><span>•</span> Talleres prácticos de cocina</li>
-          <li class="flex items-center gap-2"><span>•</span> Degustaciones y maridajes</li>
-        </ul>
-      </aside>
+      <!-- Incluimos el componente aside con posthtml-include -->
+      <include src="./components/hero-info.html"></include>
     </section>
   </main>
 
   <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
 </body>
 </html>
