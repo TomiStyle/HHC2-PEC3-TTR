@@ -1,27 +1,48 @@
 <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jornadas de Cocina Tradicional · Portada</title>
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-[#fefcf8] font-sans">
+  <include src="./views/header.html"></include>
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+  <main class="min-h-screen flex items-center justify-center p-8">
+    <!-- Card Hero (Replicando .c-hero de tu _home.scss) -->
+    <section class="bg-white rounded-[1.5rem] shadow-2xl p-8 md:p-16 max-w-[1120px] w-full grid grid-cols-1 lg:grid-cols-[2fr_3fr_1.6fr] gap-8 items-center">
+      
+      <!-- Media -->
+      <div class="rounded-[1.25rem] overflow-hidden">
+        <img src="./assets/images/hero.webp" alt="Cocina tradicional" class="w-full h-auto object-cover">
+      </div>
+
+      <!-- Content -->
+      <div>
+        <p class="text-[0.85rem] uppercase tracking-widest opacity-60 mb-3">Jornadas de Cocina Tradicional · 12–14 mayo · Barcelona</p>
+        <h1 class="text-4xl md:text-5xl font-bold leading-[1.05] mb-4 text-uoc-corporate">Sabores de siempre,<br>cocina de hoy</h1>
+        <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-[35rem]">
+          Talleres, showcookings y charlas para recuperar la memoria gastronómica y adaptarla al siglo XXI.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#" class="btn btn-primary">Conoce a los ponentes</a>
+        </div>
+      </div>
+
+      <!-- Info Aside -->
+      <aside class="bg-gray-900 text-white p-6 rounded-2xl">
+        <h2 class="text-sm uppercase tracking-widest mb-4 opacity-80">Incluye</h2>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-center gap-2"><span>•</span> +10 ponentes especialistas</li>
+          <li class="flex items-center gap-2"><span>•</span> Talleres prácticos de cocina</li>
+          <li class="flex items-center gap-2"><span>•</span> Degustaciones y maridajes</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <include src="./views/footer.html"></include>
+</body>
 </html>

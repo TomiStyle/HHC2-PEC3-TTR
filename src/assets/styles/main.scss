@@ -1,20 +1,20 @@
-/**
- * Use this file to import partials.
- * Do not include SCSS code in this file.
- */
+/* 1) Variables (Tailwind v4 theme) */
+@import "variables";
 
- /**
- * Import dependencies
- */
-@use "dependencies";
+/* 2) Dependencias (Tailwind) */
+@import "dependencies";
 
-/**
- * Import layouts
- * It's a best practice to use a different partial for each page
- */
+/* 3) Componentes (requisito: mínimo 3 clases con @apply) */
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 font-medium transition-all duration-300;
+  }
 
- @use "layouts/home";
+  .btn-primary {
+    @apply bg-uoc-corporate text-white hover:opacity-90;
+  }
 
-/**
- * Do NOT include anything else in this file!
- */
+  .btn-outline-light {
+    @apply border border-white/70 text-white hover:bg-white hover:text-uoc-corporate;
+  }
+}

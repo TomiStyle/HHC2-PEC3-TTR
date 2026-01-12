@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jornadas de Cocina Tradicional · Artículo</title>
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="font-sans bg-white">
+  <include src="./views/header.html"></include>
+
+  <main class="l-article">
+    <!-- Hero -->
+    <section class="relative h-[50vh] min-h-[24rem] max-h-[36rem] flex items-end justify-center overflow-hidden">
+      <img
+        src="./assets/images/article-hero.webp"
+        alt="Cocina tradicional"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      <div class="relative z-10 w-full p-8 text-center text-white bg-gradient-to-t from-black/75 to-transparent">
+        <h1 class="text-3xl md:text-5xl font-bold mb-2">
+          La cocina tradicional en el siglo XXI
+        </h1>
+        <p class="text-base md:text-lg opacity-90">
+          Por <strong>María García</strong> · 15 de marzo, 2025
+        </p>
+      </div>
+    </section>
+
+    <!-- Contenido del artículo -->
+    <article class="max-w-[48rem] mx-auto px-6 py-16">
+      <div class="text-[1.05rem] leading-[1.75] text-gray-800 text-justify space-y-6">
+
+        <p class="text-xl font-medium text-gray-900">
+          La cocina tradicional no es solo un conjunto de recetas heredadas: es memoria, identidad y un puente entre generaciones. En un mundo cada vez más globalizado, recuperar estos sabores es un acto de resistencia cultural.
+        </p>
+
+        <p>
+          Durante décadas, la cocina rápida y los productos ultraprocesados
+          han desplazado las técnicas lentas y los ingredientes de proximidad.
+          Sin embargo, en los últimos años asistimos a un renacimiento: chefs,
+          investigadores y familias vuelven a poner en valor los guisos de
+          cuchara, las conservas caseras y las recetas de temporada.
+        </p>
+
+        <blockquote class="bg-gray-50 border-l-4 border-uoc-corporate p-8 italic text-lg text-gray-700 rounded-md my-8">
+          «Cocinar como lo hacían nuestras abuelas no es nostalgia, es
+          sostenibilidad. Es entender el ciclo de los alimentos y respetar el
+          tiempo que necesitan.»
+        </blockquote>
+
+        <p>
+          Este movimiento no se limita a la alta gastronomía. En pueblos y
+          ciudades, cooperativas de consumo, mercados de proximidad y talleres
+          comunitarios están recuperando variedades locales de hortalizas,
+          razas autóctonas de ganado y métodos de elaboración artesanal que
+          parecían perdidos.
+        </p>
+
+        <figure class="my-10 text-center">
+          <img
+            src="./assets/images/article-content.webp"
+            alt="Ingredientes tradicionales"
+            class="w-full rounded-xl shadow-lg mb-3"
+          />
+          <figcaption class="text-sm italic text-gray-500">
+            Mercado con productos de temporada
+          </figcaption>
+        </figure>
+
+        <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">
+          Claves para recuperar la cocina tradicional
+        </h2>
+
+        <p>
+          Si quieres incorporar estos saberes a tu día a día, aquí tienes
+          algunas pautas que pueden ayudarte a empezar:
+        </p>
+
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Compra en mercados locales y de temporada siempre que puedas.</li>
+          <li>Aprende técnicas básicas: conservas, fermentados, masas madre.</li>
+          <li>Recupera recetas familiares: pregunta, anota, cocina con tus mayores.</li>
+          <li>Dedica tiempo a cocinar: la lentitud es parte del proceso.</li>
+        </ul>
+
+        <p>
+          La cocina tradicional no es un museo: es un organismo vivo que se adapta, evoluciona y dialoga con el presente. Las jornadas que presentamos son una oportunidad para aprender, compartir y celebrar este patrimonio inmaterial que nos alimenta en todos los sentidos.
+        </p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Recursos y lecturas recomendadas</h2>
+
+        <ol class="list-disc pl-6 space-y-2">
+          <li><em>El sabor de la memoria</em>, de Laura Esquivel</li>
+          <li><em>Cocina tradicional española</em>, de Simone Ortega</li>
+          <li><em>La despensa de la abuela</em>, de varios autores</li>
+        </ol>
+
+        <p>
+          Te invitamos a explorar estas referencias y, sobre todo, a
+          experimentar en tu propia cocina. Porque cada plato que rescatamos
+          del olvido es un acto de amor hacia nuestra cultura y nuestro
+          territorio.
+        </p>
+
+      </div>
+    </article>
+  </main>
+
+  <include src="./views/footer.html"></include>
+</body>
+</html>
