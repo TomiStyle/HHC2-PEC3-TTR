@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Contest 2024 Edition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #f97316;
+        }
+
+        .recipe-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-icon {
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.1);
+            color: #f97316;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-gray-800">
+                    Cooking contest 2024 edition
+                </div>
+                <ul class="flex space-x-8">
+                    <li><a href="#" class="nav-link text-gray-700 font-medium">Home</a></li>
+                    <li><a href="#" class="nav-link text-gray-700 font-medium">The contest</a></li>
+                    <li><a href="#" class="nav-link text-gray-700 font-medium">Recipes</a></li>
+                    <li><a href="#" class="nav-link text-gray-700 font-medium">Contestants</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gray-900">
+        <div class="relative h-[500px] overflow-hidden">
+            <img src="./assets/images/comida.jpg" alt="Cooking contest table" class="w-full h-full object-cover opacity-80">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/50"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+                <h1 class="text-5xl font-bold mb-4">Contestants</h1>
+                <p class="text-xl text-gray-200">This section describes the recipes of the best contestants</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-3">The recipes</h2>
+                <p class="text-lg text-gray-600">These are the recipes of the best contestants</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Recipe Card 1 -->
+                <div class="recipe-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Cajun seafood pasta</h3>
+                        <div class="flex items-center mb-4">
+                            <img src="./assets/images/avatar1.jpg" alt="John Cooper" class="w-12 h-12 rounded-full object-cover mr-3">
+                            <span class="text-gray-700 font-medium">John Cooper</span>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            This Cajun seafood pasta recipe is a hot one, but delicious!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 2 -->
+                <div class="recipe-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Cedar planked salmon</h3>
+                        <div class="flex items-center mb-4">
+                            <img src="./assets/images/avatar2.jpg" alt="Marta Alonso" class="w-12 h-12 rounded-full object-cover mr-3">
+                            <span class="text-gray-700 font-medium">Marta Alonso</span>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            Salmon reaches its full potential when it's grilled on top of a cedar plank.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 3 -->
+                <div class="recipe-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Poulet au vinaigre</h3>
+                        <div class="flex items-center mb-4">
+                            <img src="./assets/images/avatar3.jpg" alt="Mary Ann Stones" class="w-12 h-12 rounded-full object-cover mr-3">
+                            <span class="text-gray-700 font-medium">Mary Ann Stones</span>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            Irresistible chicken, cooked with vinegar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <!-- Footer Top -->
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div class="text-2xl font-bold mb-4 md:mb-0">
+                    Cooking contest 2024 edition
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="social-icon text-2xl">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-icon text-2xl">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon text-2xl">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer Table -->
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="border-b border-gray-700">
+                            <th class="py-3 px-4 font-semibold">Recipes</th>
+                            <th class="py-3 px-4 font-semibold">Contestants</th>
+                            <th class="py-3 px-4 font-semibold">Contest editions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-800">
+                            <td class="py-3 px-4">Cajun seafood pasta</td>
+                            <td class="py-3 px-4">John Cooper</td>
+                            <td class="py-3 px-4">2024</td>
+                        </tr>
+                        <tr class="border-b border-gray-800">
+                            <td class="py-3 px-4">Cedar planked salmon</td>
+                            <td class="py-3 px-4">Marta Alonso</td>
+                            <td class="py-3 px-4">2023</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4">Poulet au vinagre</td>
+                            <td class="py-3 px-4">Mary Ann Stones</td>
+                            <td class="py-3 px-4">2022</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
